@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+}
+
+:root{
+  --primary: #94abe4;
+  --secondary: #75c5cf;
+  --focus: #1c48b8;
+  --alert: #fa0000;
+}
+
+.main{
+  height: 100vh;
+  width: 100vw;
+}

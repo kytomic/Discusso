@@ -1,0 +1,31 @@
+#login, #register {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 450px;
+    height: 650px;
+    margin-bottom: 2rem;
+}
+
+.textField {
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.button {
+    margin-top: 5rem;
+}
+
+.hypertext {
+    text-decoration: none;
+    color: var(--secondary);
+}
