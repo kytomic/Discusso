@@ -1,0 +1,39 @@
+.chatBlock {
+    background-color: var(--primary);
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    
+    .avatar {
+        width: var(--avatarSize);
+        height: var(--avatarSize);
+    }
+
+    .chatBlockContent {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+        width: 100%;
+        
+        .upperChatBlockContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            width: 100%;
+        }
+    }
+
+    .chatMsg, .chatTime {
+        font-size: 0.9rem;
+        color: var(--grey);
+    }
+
+
+}

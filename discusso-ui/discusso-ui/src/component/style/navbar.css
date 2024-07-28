@@ -1,0 +1,25 @@
+.verticalNavBar {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 5vw;
+    height: 100vh;
+    padding: 1rem 0rem;
+}
+
+.upperButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 14vh;
+}
+
+.bottomButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 21vh;
+}

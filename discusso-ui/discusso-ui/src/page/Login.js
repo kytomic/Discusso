@@ -36,11 +36,11 @@ const Login = () => {
 
     return (
         <Box className='main' id='login'> 
-            <Typography variant='h4' component='h4' color={Colour.focus} align='center' marginBottom={6}>Discusso</Typography>
+            <Typography variant='h4' component='h4' color={Colour.headerBlue} align='center' marginBottom={6}>Discusso</Typography>
             <form method='submit'>
                 <Paper sx={{borderRadius: '15px'}} elevation={6}>
                     <Box className='formBox'>
-                        <Typography variant='h5' component='h5' color={Colour.focus} align='center'>Login</Typography>
+                        <Typography variant='h5' component='h5' color={Colour.headerBlue} align='center'>Login</Typography>
                         <TextField className='textField' label='Username' variant='standard' onChange={(e) => {setUsername(e.target.value)}}/>
                         <TextField className='textField' label='Password' variant='standard' type='password' onChange={(e) => {setPassword(e.target.value)}}/>
                         <Button className='button' variant='contained' color="primary" onClick={onSubmit}>Login</Button>

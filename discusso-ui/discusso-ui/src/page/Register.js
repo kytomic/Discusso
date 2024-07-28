@@ -32,7 +32,7 @@ const Register = () => {
                 navigate("/");
                 return;
             }
-            setAlertText('Unsuccessful registration');
+            setAlertText('Unsuccessful registration - username has been used');
             alertRef.current.hidden = false;
             
         }).catch((err) => {
@@ -42,11 +42,11 @@ const Register = () => {
 
     return (
         <Box className='main' id='register'> 
-            <Typography variant='h4' component='h4' color={Colour.focus} align='center' marginBottom={6}>Discusso</Typography>
+            <Typography variant='h4' component='h4' color={Colour.headerBlue} align='center' marginBottom={6}>Discusso</Typography>
             <form method='submit'>
                 <Paper sx={{borderRadius: '15px'}} elevation={6}>
                     <Box className='formBox'>
-                        <Typography variant='h5' component='h5' color={Colour.focus} align='center'>Register</Typography>
+                        <Typography variant='h5' component='h5' color={Colour.headerBlue} align='center'>Register</Typography>
                         <TextField className='textField' id='username' label='Username' variant='standard' value={username} onChange={(e) => {setUsername(e.target.value)}}/>
                         <TextField className='textField' label='Password' variant='standard' type='password' value={password} onChange={(e) => {setPassword(e.target.value)}}/>
                         <TextField className='textField' label='Email' variant='standard' value={email} onChange={(e) => {setEmail(e.target.value)}}/>

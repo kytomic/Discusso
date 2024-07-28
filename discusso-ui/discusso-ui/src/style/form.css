@@ -6,6 +6,12 @@
     align-items: center;
 }
 
+#main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .formBox {
     display: flex;
     flex-direction: column;
@@ -27,5 +33,5 @@
 
 .hypertext {
     text-decoration: none;
-    color: var(--secondary);
+    color: var(--headerBlue);
 }

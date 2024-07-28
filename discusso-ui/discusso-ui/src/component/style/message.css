@@ -1,0 +1,20 @@
+.msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-end;
+    min-width: 200px;
+    max-width: 400px;
+
+    padding: 0.5rem 1rem;
+    margin: 0.75rem;
+    
+    .msgText {
+        font-size: 0.75rem;
+    }
+
+    .msgTime { 
+        font-size: 0.5rem;
+    }
+}

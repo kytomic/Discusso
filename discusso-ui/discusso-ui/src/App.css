@@ -7,13 +7,22 @@
 }
 
 :root{
-  --primary: #94abe4;
-  --secondary: #75c5cf;
+  --primary: #bbe3ff;
+  --secondary: #71cef5;
+  --secondaryBg: #def5ff;
   --focus: #1c48b8;
   --alert: #fa0000;
+  --avatarSize: 56px;
+  --grey: #747373; 
+  --palegrey: #e9e9e9;
+  --headerBlue: #00aff9;
 }
 
 .main{
   height: 100vh;
+  width: 100vw;
+}
+
+.avatar {
   width: 100vw;
 }
