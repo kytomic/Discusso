@@ -6,6 +6,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,5 +33,12 @@ public class UserResource {
     @PostMapping("/login")
     public ResponseEntity<UserDto> login(@RequestBody UserDto userDto) {
         return ResponseEntity.ok().body(userService.getUserInfo(userDto).orElse(null));
+    }
+
+    @MessageMapping("/test")
+    @SendTo("/chat")
+    public boolean testSocket() throws InterruptedException {
+        Thread.sleep(100);
+        return true;
     }
 }

@@ -10,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -38,6 +40,11 @@ public class UserServiceImpl implements UserService{
         if (user != null) return Optional.of(UserMapper.mapToUserDto(user));
         return Optional.empty();
     };
+
+    @Override
+    public Optional<List<Object[]>> getChattingFriendInfo(List<Integer> id) {
+        return userRepository.findUserInfoById(id);
+    }
 
     // Add friends
     // Remove friends

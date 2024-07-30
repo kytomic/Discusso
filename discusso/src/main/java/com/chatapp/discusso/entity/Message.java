@@ -33,4 +33,12 @@ public class Message {
 
     @Column(name = "status")
     public boolean status;
+
+    public Message(String body, int senderId, int receiverId, Date timestamp) {
+        this.body = body;
+        this.senderId = senderId;
+        this.receiverId = receiverId;
+        this.timestamp = timestamp;
+        this.status = true;
+    }
 }
