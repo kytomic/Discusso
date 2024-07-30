@@ -46,16 +46,13 @@
 
         width: 80%;
 
-        .inputPaper {
+        .inputField {
             width: 80%;
             background-color: var(--secondaryBg);
             margin: 0rem 1.5rem;
             padding: 0.25rem 1rem;
+            
             border-radius: 12px;
-
-            .inputField {
-                width: 100%;
-            }
         }
     }
 }
